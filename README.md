@@ -32,3 +32,15 @@ To run backend:
 cd backend
 npm start
 ```
+
+## Uninstalling the application
+To remove node_modules directories:
+```
+npm install rimraf -g
+
+cd backend
+npx rimraf --glob **/node_modules
+
+cd frontend
+npx rimraf --glob **/node_modules
+```
